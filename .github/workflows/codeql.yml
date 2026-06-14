@@ -41,8 +41,7 @@ jobs:
 
     strategy:
       fail-fast: false
-      matrix:  main
-          include:       
+      matrix:        
         #  CodeQL supports the following values keywords for 'language': 'actions', 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'rust', 'swift'
         include:
         - language: actions
