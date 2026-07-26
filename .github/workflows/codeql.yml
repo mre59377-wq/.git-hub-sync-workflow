@@ -38,7 +38,6 @@ jobs:
       # only required for workflows in private repositories
       actions: read
       contents: read
-
     strategy:
       fail-fast: true  
       matrix:  main      
