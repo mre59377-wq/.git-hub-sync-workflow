@@ -38,11 +38,12 @@ jobs:
       # only required for workflows in private repositories
       actions: read
       contents: read
-    strategy:
+      
+      strategy:
       fail-fast: true  
       matrix:  main      
         #  CodeQL supports the following values keywords for 'language': 'actions', 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'rust', 'swift'
-        include:
+      include:
         - language: actions
           build-mode: none
         # CodeQL supports the following values keywords for 'language': 'actions', 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'rust', 'swift'
